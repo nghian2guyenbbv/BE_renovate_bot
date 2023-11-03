@@ -1,27 +1,9 @@
 {
-  "branchPrefix": "test-renovate/",
-  "dryRun": "full",
-  "username": "nghian2guyenbbv",
-  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
-  "onboarding": false,
-  "platform": "github",
-  "includeForks": true,
-  "repositories": [
-    "nghian2guyenbbv/BE_renovate_bot"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
   ],
-  "packageRules": [
-    {
-      "description": "lockFileMaintenance",
-      "matchUpdateTypes": [
-        "pin",
-        "digest",
-        "patch",
-        "minor",
-        "major",
-        "lockFileMaintenance"
-      ],
-      "dependencyDashboardApproval": false,
-      "stabilityDays": 0
-    }
-  ]
+  "packageRules":[
+  ],
+  "platformAutomerge": true
 }
