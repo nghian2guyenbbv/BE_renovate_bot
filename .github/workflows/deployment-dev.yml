@@ -1,0 +1,46 @@
+name: GithubActions - deployment BE gitrenovate
+
+on: 
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Environment for deployment'
+jobs:
+  renovate:
+    name: update dependencies with renovate
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v3.6.0
+        - name: Self-hosted Renovate
+          uses: renovatebot/github-action@v39.1.1
+          with:
+            configurationFile: example/renovate-config.js
+            token: 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
+  develop-dev:
+    name: Development deploy applications.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git branch
+        uses: actions/checkout@v3
+      - name: Setup Back-end JDK and Maven
+        uses: s4u/setup-maven-action@v1.5.1
+        with:
+          java-version: '8'
+          java-distribution: 'zulu'
+          maven-version: '3.8.6'
+      - name: Building back-end.
+        shell: bash
+        working-directory: ./beGitrenovate
+        run: |
+            mvn clean install \
+                -Dmaven.test.skip=true
+        
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          path: beGitrenovate/target/*.jar
+      
+
+              
+        
