@@ -1,15 +1,13 @@
 {
   "branchPrefix": "test-renovate/",
   "dryRun": "full",
-  "username": "renovate-release",
+  "username": "nghian2guyenbbv",
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
   "onboarding": false,
   "platform": "github",
   "includeForks": true,
   "repositories": [
-    "renovatebot/github-action",
-    "renovate-tests/cocoapods1",
-    "renovate-tests/gomod1"
+    "nghian2guyenbbv/BE_renovate_bot"
   ],
   "packageRules": [
     {
