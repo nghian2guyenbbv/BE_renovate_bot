@@ -6,7 +6,7 @@ module.exports = {
   platform: 'github',
   includeForks: true,
   dryRun: 'full',
-  repositories: ['nghian2guyenbbv/BE_renovate_bot', 'nghian2guyenbbv/BE_renovate_bot'],
+  repositories: ['nghian2guyenbbv/BE_renovate_bot'],
   packageRules: [
     {
       description: 'lockFileMaintenance',
