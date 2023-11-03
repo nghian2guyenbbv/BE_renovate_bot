@@ -1,12 +1,12 @@
 module.exports = {
   branchPrefix: 'test-renovate/',
-  username: 'renovate-release',
+  username: 'nghian2nguyenbbv',
   gitAuthor: 'Renovate Bot <bot@renovateapp.com>',
   onboarding: false,
   platform: 'github',
   includeForks: true,
   dryRun: 'full',
-  repositories: ['renovate-tests/cocoapods1', 'renovate-tests/gomod1'],
+  repositories: ['nghian2guyenbbv/BE_renovate_bot', 'nghian2guyenbbv/BE_renovate_bot'],
   packageRules: [
     {
       description: 'lockFileMaintenance',
