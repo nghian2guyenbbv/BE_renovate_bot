@@ -1,4 +1,4 @@
-name: GithubActions - deployment BE gitrenovate
+name: GithubActions - SCHEDULE - RENOVATE
 
 on: 
   workflow_dispatch:
