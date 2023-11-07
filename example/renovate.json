@@ -2,7 +2,6 @@
   "branchPrefix": "master/",
   "dependencyDashboardTitle": "Dependency Dashboard self-hosted",
   "dryRun": "full",
-  "username": "nghian2guyenbbv",
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
   "onboarding": true,
   "platform": "github",
