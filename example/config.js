@@ -8,6 +8,6 @@ module.exports = {
   gitAuthor: "nghian2nguyenbbv <nghiashinhan96@gmail.com>",
   baseBranches: ["master"],
   "platformAutomerge": false,
-  "dependencyDashboard": true,
+  dependencyDashboard: true,
   "branchPrefix": "renovate/",
 };
