@@ -19,29 +19,29 @@ jobs:
         with:
           configurationFile: example/config.js
           token: ${{ secrets.RENOVATE_TOKEN }}
-  develop-dev:
-    name: Development deploy applications.
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout git branch
-        uses: actions/checkout@v3
-      - name: Setup Back-end JDK and Maven
-        uses: s4u/setup-maven-action@v1.5.1
-        with:
-          java-version: '8'
-          java-distribution: 'zulu'
-          maven-version: '3.8.6'
-      - name: Building back-end.
-        shell: bash
-        working-directory: ./beGitrenovate
-        run: |
-            mvn clean install \
-                -Dmaven.test.skip=true
+#   develop-dev:
+#     name: Development deploy applications.
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout git branch
+#         uses: actions/checkout@v3
+#       - name: Setup Back-end JDK and Maven
+#         uses: s4u/setup-maven-action@v1.5.1
+#         with:
+#           java-version: '8'
+#           java-distribution: 'zulu'
+#           maven-version: '3.8.6'
+#       - name: Building back-end.
+#         shell: bash
+#         working-directory: ./beGitrenovate
+#         run: |
+#             mvn clean install \
+#                 -Dmaven.test.skip=true
         
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          path: beGitrenovate/target/*.jar
+#       - name: Upload artifacts
+#         uses: actions/upload-artifact@v3
+#         with:
+#           path: beGitrenovate/target/*.jar
       
 
               
