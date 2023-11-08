@@ -1,13 +1,12 @@
 {
   "branchPrefix": "master/",
-  "dependencyDashboardTitle": "Dependency Dashboard self-hosted",
+  "dependencyDashboardTitle": "Dependency Dashboard Renovate",
   "dryRun": "full",
-  "username": "nghian2guyenbbv",
-  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+  "gitAuthor": "nghian2nguyenbbv <nghiashinhan96@gmail.com>",
   "onboarding": true,
   "platform": "github",
   "includeForks": true,
-  "repositories": ["nghian2guyenbbv/BE_renovate_bot"],
+  "repositories": ["nghian2guyenbbv/gitHubCircleCi"],
   "packageRules": [
     {
       "description": "lockFileMaintenance",
@@ -19,6 +18,7 @@
         "major",
         "lockFileMaintenance"
       ],
+      "automergeType": "pr",
       "dependencyDashboardApproval": false,
       "stabilityDays": 0
     }
