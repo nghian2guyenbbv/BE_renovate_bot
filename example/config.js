@@ -1,6 +1,7 @@
 module.exports = {
   platform: 'github',
   logLevel: 'info',
+  automerge : true,
   automergeType: "pr", 
   onboarding: true,
   "extends": ["github>renovatebot/.github"],
