@@ -1,7 +1,6 @@
 module.exports = {
   platform: 'github',
   logLevel: 'info',
-  automerge : false,
   onboarding: true,
   "extends": ["github>renovatebot/.github"],
   repositories: ['nghian2guyenbbv/BE_renovate_bot'],
@@ -13,5 +12,22 @@ module.exports = {
   prHourlyLimit: 0,
   branchConcurrentLimit: 0,
   prConcurrentLimit: 0,
-  branchPrefix: 'renovate/'
+  branchPrefix: 'renovate/',
+  includeForks: true,
+  packageRules: [
+    {
+      description: "lockFileMaintenance",
+      matchUpdateTypes: [
+        "pin",
+        "digest",
+        "patch",
+        "minor",
+        "major",
+        "lockFileMaintenance"
+      ],
+      automergeType: "pr",
+      dependencyDashboardApproval: false,
+      stabilityDays: 0
+    }
+  ]
 };
