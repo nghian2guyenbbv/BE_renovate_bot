@@ -6,7 +6,7 @@
   "onboarding": true,
   "platform": "github",
   "includeForks": true,
-  "repositories": ["nghian2guyenbbv/gitHubCircleCi"],
+  "repositories": ["nghian2guyenbbv/BE_renovate_bot"],
   "packageRules": [
     {
       "description": "lockFileMaintenance",
