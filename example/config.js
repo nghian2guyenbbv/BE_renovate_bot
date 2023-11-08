@@ -2,7 +2,7 @@ module.exports = {
   platform: 'github',
   logLevel: 'info',
   automerge : true,
-  automergeType: "pr", 
+  automergeType: 'pr', 
   onboarding: true,
   "extends": ["github>renovatebot/.github"],
   repositories: ['nghian2guyenbbv/BE_renovate_bot'],
@@ -10,9 +10,9 @@ module.exports = {
   baseBranches: ["master"],
   platformAutomerge: false,
   dependencyDashboard: true,
-  labels:["dependencies"],
+  labels:['dependencies'],
   prHourlyLimit: 0,
   branchConcurrentLimit: 0,
   prConcurrentLimit: 0,
-  branchPrefix: "renovate/",
+  branchPrefix: 'renovate/'
 };
