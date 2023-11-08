@@ -2,7 +2,6 @@ module.exports = {
   platform: 'github',
   logLevel: 'info',
   automerge : false,
-  automergeType: 'pr', 
   onboarding: true,
   "extends": ["github>renovatebot/.github"],
   repositories: ['nghian2guyenbbv/BE_renovate_bot'],
