@@ -10,5 +10,9 @@ module.exports = {
   baseBranches: ["master"],
   platformAutomerge: false,
   dependencyDashboard: true,
+  labels:["dependencies"],
+  prHourlyLimit: 0,
+  branchConcurrentLimit: 0,
+  prConcurrentLimit: 0,
   branchPrefix: "renovate/",
 };
