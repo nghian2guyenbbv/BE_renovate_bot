@@ -7,7 +7,7 @@ module.exports = {
   repositories: ['nghian2guyenbbv/BE_renovate_bot'],
   gitAuthor: "nghian2nguyenbbv <nghiashinhan96@gmail.com>",
   baseBranches: ["master"],
-  "platformAutomerge": false,
+  platformAutomerge: false,
   dependencyDashboard: true,
-  "branchPrefix": "renovate/",
+  branchPrefix: "renovate/",
 };
